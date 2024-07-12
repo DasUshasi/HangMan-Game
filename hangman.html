@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="title">HANGMAN</div>
+    <div id="doc">
+        <div id="game"></div>
+        <div id="otherStuff">
+            <div id="imgCell">
+                <img src="hangman0.png" id="image">
+                <div id="wrongGuesses">Number of Wrong Guesses: 0 / 6</div>
+            </div>
+            <div id="content">
+                <div id="hint"></div>
+                <div id="guessed">Wrong guesses: </div>
+                <div id="win"></div>
+            </div>
+        </div>
+    </div>
+    <div id="popUp"></div>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+body {
+    display: grid;
+    color: black;
+    justify-content: center;
+    height: 97.75vh;
+    width: 90vw;
+    background-image: linear-gradient(rgb(213, 250, 255), rgb(245, 190, 253), rgb(251, 199, 207));
+}
+
+#doc {
+    display: grid;
+}
+
+#game {
+    display: grid;
+    width: max-content;
+    height: max-content;
+    place-items: center;
+    column-gap: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box {
+    width: 70px;
+    height: 70px;
+    display: grid;
+    border: 3px solid blue;
+    border-radius: 10px;
+    place-content: center;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+    background-color: white;
+}
+
+#wrongGuesses,
+#guessed,
+#hint {
+    width: max-content;
+    height: max-content;
+    font-size: 2rem;
+    margin-top: 25px;
+    margin-left: 50px;
+}
+
+#wrongGuesses {
+    margin-top: 0;
+}
+
+#guessed {
+    border: 3px solid black;
+    width: 350px;
+    height: 50px;
+    place-content: center;
+    text-align: left;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+#content {
+    width: 500px;
+    height: 500px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#otherStuff {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+}
+
+#imgCell {
+    margin-top: 20px;
+}
+
+#popUp {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 30%;
+    top: 20%;
+    width: 500px;
+    height: 500px;
+    overflow: auto;
+    background-color: white;
+    border: 5px solid rgb(165, 0, 207);
+    border-radius: 50px;
+    place-content: center;
+    box-shadow: rgb(204, 0, 255) 0 0 90px 20px;
+}
+
+.text {
+    width: max-content;
+    height: max-content;
+    font-size: 50px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Permanent Marker", cursive;
+}
+
+.textFont {
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 2px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.gif {
+    width: 250px;
+    height: 250px;
+}
+
+.btn {
+    width: max-content;
+    height: max-content;
+    padding: 15px;
+    font-size: 2rem;
+    border: 2px solid black;
+    background-color: rgb(194, 252, 107);
+    border-radius: 50px;
+    margin-top: 10px;
+    box-shadow: 8px 8px 5px rgb(154, 154, 154);
+    cursor: pointer;
+}
+
+.imgCnt {
+    width: max-content;
+    height: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#title{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-size: 50px;
+    font-weight: 700;
+    height: max-content;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    color: rgb(62, 0, 62);
+}
