@@ -1,14 +1,31 @@
 body {
+    overflow-x: scroll;
     display: grid;
     color: black;
-    justify-content: center;
-    height: 97.75vh;
-    width: 90vw;
+    place-items: center;
+    height: 100%;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
     background-image: linear-gradient(rgb(213, 250, 255), rgb(245, 190, 253), rgb(251, 199, 207));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 #doc {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    width: 100%;
 }
 
 #game {
@@ -17,20 +34,18 @@ body {
     height: max-content;
     place-items: center;
     column-gap: 5px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .box {
-    width: 70px;
-    height: 70px;
+    width: 5rem;
+    height: 5rem;
     display: grid;
     border: 3px solid blue;
     border-radius: 10px;
     place-content: center;
     text-transform: uppercase;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 2.5rem;
+    font-size: 4rem;
     background-color: white;
 }
 
@@ -70,18 +85,15 @@ body {
     grid-template-columns: 2fr 1.5fr;
 }
 
-#imgCell {
-    margin-top: 20px;
-}
-
 #popUp {
     display: none;
     position: fixed;
     z-index: 1;
-    left: 30%;
     top: 20%;
-    width: 500px;
-    height: 500px;
+    width: 30rem;
+    height: 30rem;
+    left: 50%;
+    transform: translateX(-50%);
     overflow: auto;
     background-color: white;
     border: 5px solid rgb(165, 0, 207);
@@ -124,6 +136,7 @@ body {
     margin-top: 10px;
     box-shadow: 8px 8px 5px rgb(154, 154, 154);
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
 .imgCnt {
@@ -133,8 +146,8 @@ body {
     margin-right: auto;
 }
 
-#title{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+#title {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 50px;
     font-weight: 700;
     height: max-content;
@@ -143,4 +156,43 @@ body {
     margin-right: auto;
     margin-top: 10px;
     color: rgb(62, 0, 62);
+}
+
+@media (max-width: 600px) {
+    body {
+        margin-left: 0;
+    }
+
+    #otherStuff {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #content {
+        height: max-content;
+    }
+
+    #game {
+        display: flex;
+        flex-wrap: wrap;
+        height: max-content;
+        width: 100%;
+        row-gap: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #popUp {
+        width: 20rem;
+        height: max-content;
+    }
+
+    #popUp>.text {
+        font-size: 2.5rem;
+    }
+
+    .gif {
+        width: 10rem;
+        height: 10rem;
+    }
 }
